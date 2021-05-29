@@ -1,0 +1,14 @@
+
+@mixin flex-box($justify-content: false, $align-items: false, $flex-direction: false) {
+    display: flex;
+    @if $justify-content != false {
+        justify-content: $justify-content;
+    }
+    @if $align-items != false {
+        align-items: $align-items;
+    }
+    @if $flex-direction != false {
+        flex-direction: $flex-direction;
+    }
+
+}
